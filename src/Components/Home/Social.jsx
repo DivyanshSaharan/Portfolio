@@ -7,7 +7,7 @@ const Social = () => {
   return (
     <div className="home__social">
         <a href="https://github.com/DivyanshSaharan" className="home__social-icon" target="_blank">
-          <img src={GithubIcon} alt="GitHub Icon" style={{height:'20px',width:"20px"}}/><br></br>
+          <img src={GithubIcon} alt="GitHub Icon" style={{height:'20px',width:"20px"}}/>
       {/* Other content */}
         </a>
         <a href="https://leetcode.com/u/divyansh1_1/" className="home__social-icon" target="_blank">
