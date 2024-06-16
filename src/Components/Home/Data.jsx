@@ -8,7 +8,7 @@ const Data = () => {
       <img src={handIcon} alt="hand" className='home__hand'/>
       </h1>
       <h3 className="home__subtitle">MERN Stack Web Developer</h3>
-      <p className="home__description">Currently exploring the MERN stack as a computer science student, I am dedicated to developing my skills in creating modern web applications. With a focus on MongoDB, Express.js, React, and Node.js, I aim to contribute fresh perspectives and innovative solutions in the realm of web development.</p>
+      <p className="home__description">Harnessing the power of MERN stack to innovate and inspire as a budding web developer.</p>
       <a href="#contact" className="button button--flex">Say Hi 
         <svg
                   className="button__icon"
