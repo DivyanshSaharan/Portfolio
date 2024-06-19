@@ -6,7 +6,7 @@ const Qualification = () => {
         setToggleState(ind)
     }
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
         <h2 className="section__title">Qualification</h2>
         <span className="section__subtitle">My Personel Journey</span>
         <div className="qualification__container container">

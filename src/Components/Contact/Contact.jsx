@@ -37,7 +37,7 @@ const Contact = () => {
                     <i className="bx bx-mail-send contact__card-icon"></i>
                     <h3 className="contact__card-title">Email</h3>
                     <span className="contact__card-data">divyanshsaharan1@gmail.com</span>
-                    <a href="mailto:divyanshsaharan1@gmail.com" className="contact__button">
+                    <a href="mailto:divyanshsaharan1@gmail.com" className="contact__button" target='_blank'>
                       Write me{" "}
                       <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                     </a>
@@ -47,7 +47,7 @@ const Contact = () => {
                     <i className="bx bxl-whatsapp contact__card-icon"></i>
                     <h3 className="contact__card-title">Whatsapp</h3>
                     <span className="contact__card-data">9315866323</span>
-                    <a href="https://api.whatsapp.com/send?phone=+919315866323&text=Hello, More Information" className="contact__button">
+                    <a href="https://api.whatsapp.com/send?phone=+919315866323&text=Hello, More Information" className="contact__button" target='_blank'>
                       Write me{" "}
                       <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                     </a>
@@ -57,7 +57,7 @@ const Contact = () => {
                     <i className="bx bxl-discord-alt contact__card-icon"></i>
                     <h3 className="contact__card-title">Discord</h3>
                     <span className="contact__card-data">frenzychamp_13103</span>
-                    <a href="http://discordapp.com/users/1139913000829063210" className="contact__button">
+                    <a href="http://discordapp.com/users/1139913000829063210" className="contact__button" target='_blank'>
                       Write me{" "}
                       <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                     </a>

@@ -111,23 +111,17 @@
     resize: none;
 }
 
-/* Your existing styles */
 .flash {
-    /* Your other styles here */
-    /* ... */
-    
-    /* Add the following animation properties */
     animation: fadeOut 6s ease forwards;
 }
 
-/* Define the keyframes for fading out */
 @keyframes fadeOut {
     0% {
         opacity: 1;
     }
     100% {
         opacity: 0;
-        display: none; /* Hide the element after fading out */
+        display: none;
     }
 }
 
