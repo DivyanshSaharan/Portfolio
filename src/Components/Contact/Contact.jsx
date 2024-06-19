@@ -1,19 +1,29 @@
-import React, { useRef } from 'react';
+import React, { useRef ,useState} from 'react';
 import emailjs from '@emailjs/browser';
-import "./contact.css"
+import "./contact.css";
 const Contact = () => {
   const form = useRef();
-
-  const sendEmail = (e) => {
+  const [flashMessage, setFlashMessage] = useState('');
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    let x=emailjs
-      .sendForm('service_cahnq9i', 'template_a0yczro', form.current, {
-        publicKey: '0EmKNjQDEsCU4mS-P',
-      })
-      console.log(x);
-      e.target.reset();
+    try {
+        await emailjs.sendForm('service_cahnq9i', 'template_145jv0q', form.current, {
+            publicKey: '0EmKNjQDEsCU4mS-P',
+        });
+        setFlashMessage('Email sent successfully!'); // Set success message
+
+        // Clear the flash message after 3 seconds
+        setTimeout(() => {
+            setFlashMessage('');
+        }, 6000); // Adjust the time (in milliseconds) as needed
+    } catch (error) {
+        setFlashMessage('Error sending email. Please try again.'); // Set error message
+    }
+
+    e.target.reset();
   };
+
 
   return (
     <section className="contact section" id="contact">
@@ -55,7 +65,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="contact__content">
-              <h3 className="contact__title">Write me your project</h3>
+              <h3 className="contact__title">Message me</h3>
               <form ref={form} onSubmit={sendEmail} className="contact__form">
                 <div className="contact__form-div">
                   <label className="contact__form-tag">Name</label>
@@ -63,11 +73,11 @@ const Contact = () => {
                 </div>
                 <div className="contact__form-div">
                   <label className="contact__form-tag">Mail</label>
-                  <input type="email" name='email' className="contact__form-input" placeholder='Insert your name' />
+                  <input type="email" name='email' className="contact__form-input" placeholder='Insert your email' />
                 </div>
                 <div className="contact__form-div contact__form-area">
                   <label className="contact__form-tag">Message</label>
-                  <textarea name="message" cols="30" rows="10" className='contact__form-input' placeholder='Write your project'></textarea>
+                  <textarea name="message" cols="30" rows="10" className='contact__form-input' placeholder='Write your message'></textarea>
                 </div>
 
                 <button href="#contact" className="button button--flex">Send Message 
@@ -90,6 +100,7 @@ const Contact = () => {
                   </svg>
                 </button>
               </form>
+              {flashMessage && <div className="flash">{flashMessage}</div>}
             </div>
         </div>
     </section>
