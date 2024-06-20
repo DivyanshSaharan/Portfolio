@@ -22,6 +22,7 @@ const Footer = () => {
                 <i className='bx bxl-linkedin'></i>
                 </a>
             </div>
+            <p className="code__container"><a href="https://github.com/DivyanshSaharan/Portfolio" className="button button--flex source__code" target="_blank">Source Code</a></p>
             <span className="footer__copy">
                 &#169; Divyansh Saharan. All rights reserved
             </span>
