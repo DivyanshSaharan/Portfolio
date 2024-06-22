@@ -54,23 +54,23 @@ const Projects = () => {
             <div className="project__content">
                 <div>
                     <i className='bx bxl-graphql services__icon'></i>
-                    <h3 className="project__title">Graph Algorithm <br /> Visualizer</h3>
+                    <h3 className="project__title">Portfolio <br /> Website</h3>
                 </div>
                 <span className="project__button" onClick={()=>toggleTab(2)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
                 <div className={toggleState===2?"project__modal active-modal":"project__modal"}>
                     <div className="project__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
-                        <h3 className="project__modal-title">Graph Algorithm Visualizer</h3>
-                        <p className="project__modal-description">3 years experience</p>
+                        <h3 className="project__modal-title">Portfolio</h3>
+                        <p className="project__modal-description"><a href="https://portfolio-9p4x.onrender.com" className="button button--flex project__link" target="_blank">Project Link</a><a href="https://github.com/DivyanshSaharan/Portfolio" className="button button--flex project__link" target="_blank">Source Code</a></p>
 
                         <ul className="project__modal-services grid">
                             <li className="project__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
                                 <p className="services__modal-info">
-                                   <b>User-friendly platform:</b> Simplifies online shopping with an intuitive interface.
+                                   <b>Currently Viewing:</b> Contains information about me.
                                 </p>
                             </li>
-                            <li className="project__modal-service">
+                            {/* <li className="project__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
                                 <p className="services__modal-info">
                                    <b>Secure payment options:</b> Ensures safe transactions.
@@ -87,7 +87,7 @@ const Projects = () => {
                                 <p className="services__modal-info">
                                    <b>Dual marketplace functionality:</b> Enables sellers to list products and buyers to make purchases, fostering a dynamic commercial environment.
                                 </p>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
