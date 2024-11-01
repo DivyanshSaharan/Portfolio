@@ -92,6 +92,50 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            <div className="project__content">
+                <div>
+                    <i class='bx bx-brain services__icon'></i>
+                    <h3 className="project__title">Modified Golden <br></br>Eagle Optimizer</h3>
+                </div>
+                <span className="project__button" onClick={()=>toggleTab(2)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
+                <div className={toggleState===2?"project__modal active-modal":"project__modal"}>
+                    <div className="project__modal-content">
+                        <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
+                        <h3 className="project__modal-title">Modified Golden Eagle Optimizer</h3>
+                        <p className="project__modal-description"><a href="https://github.com/DivyanshSaharan/Modified-Golden-Eagle-Optimizer" className="button button--flex project__link" target="_blank">Project Link</a></p>
+
+                        <ul className="project__modal-services grid">
+                            <li className="project__modal-service">
+                                <i className="uil uil-check-circle services__modal-icon"></i>
+                                <p className="services__modal-info">
+                                Engineered a novel exploration strategy by incorporating adaptive step size variability, stooping and targeted random
+                                walk mechanisms; this initiative led to the algorithm's ability to evaluate 50% more scenarios, increasing overall
+                                performance.
+                                </p>
+                            </li>
+                            <li className="project__modal-service">
+                                <i className="uil uil-check-circle services__modal-icon"></i>
+                                <p className="services__modal-info">
+                                Improvedthe performance of the existing algorithm on 40 out of the 59 Benchmark functions from the CEC benchmark
+                                suites.
+                                </p>
+                            </li>
+                            {/* <li className="project__modal-service">
+                                <i className="uil uil-check-circle services__modal-icon"></i>
+                                <p className="services__modal-info">
+                                   <b>Responsive design:</b> Guarantees easy access and a consistent experience across various devices.
+                                </p>
+                            </li>
+                            <li className="project__modal-service">
+                                <i className="uil uil-check-circle services__modal-icon"></i>
+                                <p className="services__modal-info">
+                                   <b>Dual marketplace functionality:</b> Enables sellers to list products and buyers to make purchases, fostering a dynamic commercial environment.
+                                </p>
+                            </li> */}
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
   )
