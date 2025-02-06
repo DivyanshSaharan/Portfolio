@@ -97,8 +97,8 @@ const Projects = () => {
                     <i class='bx bx-brain services__icon'></i>
                     <h3 className="project__title">Modified Golden <br></br>Eagle Optimizer</h3>
                 </div>
-                <span className="project__button" onClick={()=>toggleTab(2)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
-                <div className={toggleState===2?"project__modal active-modal":"project__modal"}>
+                <span className="project__button" onClick={()=>toggleTab(3)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
+                <div className={toggleState===3?"project__modal active-modal":"project__modal"}>
                     <div className="project__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
                         <h3 className="project__modal-title">Modified Golden Eagle Optimizer</h3>
@@ -129,8 +129,8 @@ const Projects = () => {
                     <i class='bx bxl-chrome services__icon'></i>
                     <h3 className="project__title">AirTouch Extension: <br /> Touchless Navigation</h3>
                 </div>
-                <span className="project__button" onClick={()=>toggleTab(2)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
-                <div className={toggleState===2?"project__modal active-modal":"project__modal"}>
+                <span className="project__button" onClick={()=>toggleTab(4)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
+                <div className={toggleState===4?"project__modal active-modal":"project__modal"}>
                     <div className="project__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
                         <h3 className="project__modal-title">AirTouch: Touchless Navigation</h3>
