@@ -120,18 +120,35 @@ const Projects = () => {
                                 suites.
                                 </p>
                             </li>
-                            {/* <li className="project__modal-service">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="project__content">
+                <div>
+                    <i class='bx bxl-chrome services__icon'></i>
+                    <h3 className="project__title">AirTouch Extension: <br /> Touchless Navigation</h3>
+                </div>
+                <span className="project__button" onClick={()=>toggleTab(2)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
+                <div className={toggleState===2?"project__modal active-modal":"project__modal"}>
+                    <div className="project__modal-content">
+                        <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
+                        <h3 className="project__modal-title">AirTouch: Touchless Navigation</h3>
+                        <p className="project__modal-description"><a href="https://github.com/DivyanshSaharan/AirtouchExtension.git" className="button button--flex project__link" target="_blank">Project Link</a></p>
+
+                        <ul className="project__modal-services grid">
+                            <li className="project__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
                                 <p className="services__modal-info">
-                                   <b>Responsive design:</b> Guarantees easy access and a consistent experience across various devices.
+                                Built a touchless navigation extension using MobileVNet and ML for hands-free web browsing.
                                 </p>
                             </li>
                             <li className="project__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
                                 <p className="services__modal-info">
-                                   <b>Dual marketplace functionality:</b> Enables sellers to list products and buyers to make purchases, fostering a dynamic commercial environment.
+                                Enabled customizable gesture controls, allowing users to define and execute gestures for seamless navigation.
                                 </p>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
                 </div>

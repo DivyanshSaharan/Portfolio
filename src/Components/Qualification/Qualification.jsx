@@ -74,7 +74,7 @@ const Qualification = () => {
                             <span className="qualification__subtitle">Datence Technologies</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                10-2024 - Present
+                                11-2024 - 12-2024
                             </div>
                         </div>
                         <div>
