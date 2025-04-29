@@ -14,7 +14,7 @@ const About = () => {
             <div className="about__data">
                 <Info />
                 <p className="about__description">Currently exploring the MERN stack as a computer science student, I am dedicated to developing my skills in creating modern web applications. With a focus on MongoDB, Express.js, React, and Node.js, I aim to contribute fresh perspectives and innovative solutions in the realm of web development.</p>
-                <a download="" href="https://docs.google.com/document/d/1tLX2kRIgdei5t-YBkxGkDdbbTIk2wYzGia6d4a2PX7E/edit?usp=sharing" className="button button--flex" target="_blank">View Resume
+                <a download="" href="https://drive.google.com/file/d/1fk1TzfR668Fj_usBmCYAoEJg6XS7F679/view?usp=drive_link" className="button button--flex" target="_blank">View Resume
                 <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
